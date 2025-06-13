@@ -53,7 +53,9 @@ const updExchRate = async () => {
     if (country === toCurr.toLowerCase()) {
       let finalAmount = input.value * rate[country];
 
-      msg.innerText = `${input.value} ${fromCurr} = ${finalAmount} ${toCurr}`;
+      msg.innerText = `${input.value} ${fromCurr} = ${finalAmount.toFixed(
+        4
+      )} ${toCurr}`;
     }
   }
 };

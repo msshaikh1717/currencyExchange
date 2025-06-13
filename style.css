@@ -4,27 +4,37 @@
 }
 
 body {
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  background-color: black;
 }
 
 .appContainer {
-  background-color: slategrey;
-  height: 70vh;
-  width: 30vw;
+  background-color: slategray;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 3rem 3rem 3rem 3rem;
+  margin: 1rem;
+  height: 100vh;
+  width: 100%;
+}
+
+#heading {
+  margin: 2rem 1rem 0rem 1rem;
+  font-size: 2.1rem;
+}
+
+.input {
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
 }
 
 .input input {
-  width: 30vw;
+  width: 90%;
   height: 2.5rem;
   font-size: 1.5rem;
   padding-left: 1rem;
@@ -32,32 +42,35 @@ body {
 }
 
 .selector {
-  width: 30vw;
-  height: 20vh;
+  width: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .subSelectFrom,
 .subSelectTo {
-  height: 15vh;
-  width: 10vw;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
 }
 
 .selectTo select,
 .selectFrom select {
-  height: 5vh;
+  padding-left: 1rem;
+  margin-left: 2rem;
   font-size: 1.5rem;
 }
 
 #btn {
-  height: 10vh;
-  width: 15vw;
-  font-size: 2.5vh;
+  height: 10%;
+  width: 80%;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 1.7rem;
+  background-color: brown;
 }
 
 p {
@@ -66,5 +79,54 @@ p {
 
 i {
   font-size: 2rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem;
+}
+
+/* media queries */
+
+/* Tablet Mode */
+@media screen and (min-width: 600px) {
+  #heading {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+
+  .input input {
+    height: 3.5rem;
+    font-size: 2.5rem;
+  }
+
+  .selectTo select,
+  .selectFrom select {
+    font-size: 3rem;
+  }
+
+  i {
+    font-size: 4rem;
+    margin: 2.5rem;
+  }
+
+  #btn {
+    font-size: 2rem;
+  }
+  .subSelectFrom,
+  .subSelectTo {
+    height: 6rem;
+  }
+  img {
+    height: 6rem;
+  }
+  #btn {
+    width: 50%;
+  }
+}
+
+/* Desktop Mode */
+@media screen and (min-width: 1024px) {
+  .selector {
+    flex-direction: row;
+  }
 }
