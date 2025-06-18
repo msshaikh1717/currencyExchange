@@ -15,38 +15,40 @@
   </head>
   <body>
     <div class="appContainer">
-      <h1 id="heading">Currency Converter</h1>
-      <div class="input">
-        <p>Enter Amount</p>
-        <input value="1" />
-      </div>
-      <div class="selector">
-        <div class="selectFrom">
-          <p>From</p>
-          <div class="subSelectFrom">
-            <img src="https://flagsapi.com/US/flat/64.png" />
-            <select name="from">
-              <!-- <option selected>USD</option>
+      <div class="heading-wrap"><h1 id="heading">Currency Converter</h1></div>
+      <div class="main-wrap">
+        <div class="input">
+          <p>Enter Amount</p>
+          <input type="number" min="1" value="1" />
+        </div>
+        <div class="selector">
+          <div class="selectFrom">
+            <p>From</p>
+            <div class="subSelectFrom">
+              <img src="https://flagsapi.com/US/flat/64.png" />
+              <select name="from">
+                <!-- <option selected>USD</option>
               <option>INR</option>
               <option>AUD</option> -->
-            </select>
+              </select>
+            </div>
           </div>
-        </div>
-        <i class="fa-solid fa-arrow-right-arrow-left"></i>
-        <div class="selectTo">
-          <p>To</p>
-          <div class="subSelectTo">
-            <img src="https://flagsapi.com/IN/flat/64.png" />
-            <select name="to">
-              <!-- <option>USD</option>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="selectTo">
+            <p>To</p>
+            <div class="subSelectTo">
+              <img src="https://flagsapi.com/IN/flat/64.png" />
+              <select name="to">
+                <!-- <option>USD</option>
               <option selected>INR</option>
               <option>AUD</option> -->
-            </select>
+              </select>
+            </div>
           </div>
         </div>
+        <p id="msg">1 USD = 80 INR</p>
       </div>
-      <p id="msg">1 USD = 80 INR</p>
-      <button id="btn">Get Exchange Rate</button>
+      <div class="cta-wrap"><button id="btn">Get Exchange Rate</button></div>
     </div>
     <script src="codes.js"></script>
     <script src="app.js"></script>

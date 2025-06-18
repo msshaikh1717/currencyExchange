@@ -38,7 +38,7 @@ for (let selection of select) {
 }
 
 const updExchRate = async () => {
-  if (input.value < 1 || input.value == "" || isNaN(input.value)) {
+  if (input.value < 1 || input.value == "") {
     input.value = 1;
   }
 
